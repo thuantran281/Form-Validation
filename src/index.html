@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="/dist/index.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-container form-active">
+        <form id="login-form" method="POST">
+          <div class="input-container">
+            <input type="text" name="email" class="input" id="email" placeholder="Email" autocomplete="off" />
+            <span class="error-msg"></span>
+          </div>
+          <div class="input-container">
+            <input type="password" name="pwd" class="input" id="pwd" placeholder="Password" />
+            <span class="error-msg"></span>
+          </div>
+          <div class="input-container">
+            <input type="checkbox" name="remember-session" id="remember-session" />
+            <label for="remember-session">Remember me</label>
+          </div>
+          <div>
+            <button type="submit" id="login">Login</button>
+            <p>or</p>
+            <span>
+              <button>Google</button>
+              <button>Twitter</button>
+            </span>
+            <p>
+              Don't have an account?
+              <span>
+                <a id="signup-link">Sign up here</a>
+              </span>
+            </p>
+          </div>
+        </form>
+      </div>
+      <div class="form-container form-inactive">
+        <form id="signup-form" method="POST">
+          <div class="input-container">
+            <input type="text" name="email" class="input" id="signup-email" autocomplete="off" placeholder="Email" />
+            <span class="error-msg"></span>
+          </div>
+          <div class="input-container">
+            <input type="password" name="pwd" class="input" id="signup-pwd" placeholder="Password" />
+            <span class="error-msg"></span>
+          </div>
+          <div class="input-container">
+            <input type="tel" name="phone" class="input" id="phone" autocomplete="off" placeholder="Phone number" />
+            <span class="error-msg"></span>
+          </div>
+          <div class="input-container">
+            <input type="password" name="confirm-pwd" class="input" id="confirm-pwd" placeholder="Confirm password" />
+            <span class="error-msg"></span>
+          </div>
+          <div>
+            <button type="submit" id="signup">Sign up</button>
+            <p>or sign up with</p>
+            <span> 
+              <button>Google</button>
+              <button>Twitter</button> 
+            </span>
+          </div>
+          <div>
+            <p>
+              Already have an account?
+              <span>
+                <a id="login-link">Login here</a>
+              </span>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

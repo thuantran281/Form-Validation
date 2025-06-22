@@ -1,0 +1,65 @@
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.error-msg {
+  color: red;
+  font-size: 16px;
+}
+
+.error-active {
+  border: 1px solid red;
+  outline: none;
+  background-color: #ffe6e6;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 500px;;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 50px auto;
+  border-radius: 8px;
+}
+
+.form-inactive {
+  display: none;
+}
+
+.input {
+  display: block;
+  width: 95%;
+  padding: 12px;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  transition: background 0.2s, border 0.2s;
+}
+
+.input-container {
+  margin-bottom: 20px;
+}
+
+#signup-link, #login-link {
+  color: blue;
+  cursor: pointer;
+}
+
+#signup-link:hover, #login-link:hover {
+  text-decoration: underline;
+  color: red;
+}
+
+#signup-link:active, #login-link:active {
+  color: purple;
+  text-decoration: none;
+}
